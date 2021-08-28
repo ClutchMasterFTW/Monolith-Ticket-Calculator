@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'counter-strikeregular';
+    src: url('fonts/cs_regular-webfont.woff2') format('woff2'),
+         url('fonts/cs_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* font-family: 'counter-strikeregular'; */
+
+@font-face {
+    font-family: 'interstateregular_comp';
+    src: url('fonts/interstate-regular-comp-58b641cc0aca1-webfont.woff2') format('woff2'),
+         url('fonts/interstate-regular-comp-58b641cc0aca1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* font-family: 'interstateregular_comp'; */
+
+@font-face {
+    font-family: 'interstateblack_cond';
+    src: url('fonts/interstate-black-cond-58b642507872b-webfont.woff2') format('woff2'),
+         url('fonts/interstate-black-cond-58b642507872b-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* font-family: 'interstateblack_cond'; */
+
+* {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'counter-strikeregular';
+    color: white;
+    font-size: 1vw;
+}
+
+html {
+    overflow: hidden;
+}
+
+#container {
+    background-image: linear-gradient(rgb(17, 17, 17), rgb(32, 32, 32));
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo {
+    position: absolute;
+    top: -0.5vw;
+    left: 1vw;
+    user-select: none;
+}
+
+#logo1 {
+    font-size: 5vw;
+}
+
+#logo2 {
+    font-size: 4vw;
+    margin-top: -2vw;
+}
+
+#logo3 {
+    font-size: 3.5vw;
+    margin-top: -1.5vw;
+}
+
+#l1 {
+    font-size: 5vw;
+    color: gray;
+}
+
+#l2 {
+    font-size: 4vw;
+    color: gray;
+}
+
+#l3 {
+    font-size: 3.5vw;
+    color: gray;
+}
+
+#offense-container {
+    background-color: rgb(17, 17, 17);
+    width: 65vw;
+    height: 36.25vw;
+    position: absolute;
+    top: 10.5vw;
+    left: 1vw;
+    border: 1px white solid;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#credits {
+    position: absolute;
+    bottom: 0.25vw;
+    left: 0.25vw;
+    z-index: 100;
+    color: white;
+    font-size: 1vw;
+}
+
+.link {
+    color: red;
+}
+
+#warning {
+    position: absolute;
+    bottom: 0.05vw;
+    right: 34.25vw;
+    user-select: none;
+    font-size: 1.25vw;
+}
+
+#warning-text {
+    position: absolute;
+    bottom: 0.15vw;
+    right: 0.25vw;
+    color: white;
+    font-size: 1vw;
+}
+
+#citation-container {
+    background-image: url("images/paper.jpg");
+    background-size: cover;
+    width: 30vw;
+    height: 36.25vw;
+    position: absolute;
+    top: 10.5vw;
+    left: 69vw;
+    border: 1px black solid;
+    box-shadow: -0.25vw 0.25vw 0.5vw black;
+}
+
+#citation-title {
+    color: black;
+    font-size: 2.25vw;
+    font-family: 'interstateregular_comp';
+    text-align: center;
+    text-decoration: underline;
+}
+
+#citation-department {
+    color: black;
+    font-size: 1.25vw;
+    font-family: 'interstateblack_cond';
+    margin-left: 0.5vw;
+}
+
+#citation-city {
+    color: black;
+    font-size: 1vw;
+    font-family: 'interstateblack_cond';
+    margin-left: 0.5vw;
+}
+
+#citation-id {
+    color: black;
+    font-size: 1.5vw;
+    font-family: 'interstateblack_cond';
+    margin-left: 0.5vw;
+}
+
+#citation-id-value {
+    color: rgb(255, 96, 79);
+    font-size: 1.5vw;
+    font-family: 'interstateblack_cond';
+}
+
+#citation-barcode {
+    transform: rotate(-90deg);
+    font-family: 'interstateblack_cond';
+    float: right;
+    margin-right: -3vw;
+    margin-top: -1vw;
+}
+
+#citation-month {
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'interstateblack_cond';
+    margin-left: 0.5vw;
+    margin-top: 0.25vw;
+}
+
+#citation-month-value {
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'interstateblack_cond';
+}
+
+#citation-day {
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'interstateblack_cond';
+    margin-left: 0.5vw;
+}
+
+#citation-day-value {
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'interstateblack_cond';
+}
+
+#citation-year {
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'interstateblack_cond';
+    margin-left: 0.5vw;
+}
+
+#citation-year-value {
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'interstateblack_cond';
+}
+
+#citation-time {
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'interstateblack_cond';
+    margin-left: 0.5vw;
+}
+
+#citation-time-value {
+    color: black;
+    font-size: 1.4vw;
+    font-family: 'interstateblack_cond';
+}
+
+#citation-charges {
+    color: black;
+    font-size: 1.75vw;
+    font-family: 'interstateblack_cond';
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#citation-charge-list {
+    width: ;
+    height: ;
+    background-color: ;
+}
+
+#map-image {
+    width: 39vw;
+    height: 39vw;
+    user-select: none;
+    position: absolute;
+    top: 7vw;
+    left: 15vw;
+    border: 1px white solid;
+    visibility: hidden;
+}
+
+#layer1 {
+    background-color: black;
+    opacity: 85%;
+    width: 18vw;
+    height: 2vw;
+    position: absolute;
+    font-size: 1.5vw;
+    color: white;
+    top: 5vw;
+    left: 15vw;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px white solid;
+    visibility: hidden;
+}
+
+#layer1:hover {
+    background-color: rgb(49, 49, 49);
+    transition: ease-in-out 0.25s;
+}
+
+#layer2 {
+    background-color: black;
+    opacity: 85%;
+    width: 18vw;
+    height: 2vw;
+    position: absolute;
+    font-size: 1.5vw;
+    color: white;
+    top: 5vw;
+    left: 33vw;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px white solid;
+    visibility: hidden;
+}
+
+#layer2:hover {
+    background-color: rgb(49, 49, 49);
+    transition: ease-in-out 0.25s;
+}
+
+#map-close {
+    background-color: red;
+    opacity: 85%;
+    width: 3vw;
+    height: 2vw;
+    position: absolute;
+    font-size: 1.5vw;
+    color: white;
+    top: 5vw;
+    left: 51vw;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px white solid;
+    visibility: hidden;
+}
+
+#map-close:hover {
+    background-color: rgb(255, 81, 81);
+    transition: ease-in-out 0.25s;
+}
+
+#map-close-icon {
+    vertical-align: middle;
+    font-size: 1.5vw;
+}
+
+.other-spans {
+    vertical-align: middle;
+    font-size: 1.5vw;
+}
+
+svg {
+    position: absolute;
+    top: 7vw;
+    left: 15vw;
+}
+
+#svg-tag {
+    visibility: hidden;
+}
+
+path {
+    opacity: 0%;
+    cursor: pointer;
+}
+
+path:hover {
+    opacity: 60%;
+    transition: ease-in-out 0.5s;
+}
+
+#map-title {
+    position: absolute;
+    top: 7vw;
+    left: 26vw;
+    visibility: hidden;
+}
