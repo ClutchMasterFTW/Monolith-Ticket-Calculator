@@ -382,3 +382,39 @@ path:hover {
     left: 26vw;
     visibility: hidden;
 }
+
+#speed-container {
+    border: 1px white solid;
+    width: 32vw;
+    height: 41vw;
+    position: absolute;
+    top: 5vw;
+    left: 55.25vw;
+    background-image: linear-gradient(rgb(17, 17, 17), rgb(32, 32, 32));
+    visibility: hidden;
+    opacity: 99.5%;
+}
+
+#speed-limit {
+    color: white;
+    font-family: 'interstateblack_cond';
+    font-size: 2vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+}
+
+#speed-limit-value {
+    color: rgb(255, 81, 81);
+    font-family: 'interstateblack_cond';
+    font-size: 5vw;
+    padding-left: 1vw;
+    text-shadow: 0vw 0vw 1vw black;
+}
+
+#speed {
+    color: white;
+    font-family: 'interstateblack_cond';
+    font-size: 2vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+}

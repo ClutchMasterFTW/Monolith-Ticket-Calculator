@@ -233,6 +233,7 @@ function changeSpeed() {
         document.getElementById("map-title").style.visibility = "visible";
         document.getElementById("map-image").style.visibility = "visible";
         document.getElementById("svg-tag").style.visibility = "visible";
+        document.getElementById("speed-container").style.visibility = "visible";
     }
 }
 
@@ -351,6 +352,36 @@ function red() {
     }
 
     speedLimit = 65;
+}
+
+function closeMap() {
+    if(markerCreated == true) {
+        //If marker has been placed ever
+        document.getElementById("layer1").style.visibility = "hidden";
+        document.getElementById("layer2").style.visibility = "hidden";
+        document.getElementById("map-close").style.visibility = "hidden";
+        document.getElementById("map-title").style.visibility = "hidden";
+        document.getElementById("map-image").style.visibility = "hidden";
+        document.getElementById("svg-tag").style.visibility = "hidden";
+        document.getElementById("speed-container").style.visibility = "hidden";
+
+        document.getElementById("marker").remove();
+        markerCreated = false;
+        document.getElementById("charge0-checkbox").innerHTML = "my_location";
+        charges[0].active = false;
+    } else if(markerCreated == false) {
+        //If marker hasen't been created yet
+        document.getElementById("layer1").style.visibility = "hidden";
+        document.getElementById("layer2").style.visibility = "hidden";
+        document.getElementById("map-close").style.visibility = "hidden";
+        document.getElementById("map-title").style.visibility = "hidden";
+        document.getElementById("map-image").style.visibility = "hidden";
+        document.getElementById("svg-tag").style.visibility = "hidden";
+        document.getElementById("speed-container").style.visibility = "hidden";
+
+        document.getElementById("charge0-checkbox").innerHTML = "my_location";
+        charges[0].active = false;
+    }
 }
 
 const d = new Date();

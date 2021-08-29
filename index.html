@@ -34,7 +34,7 @@
 		</div>
 		<div id="layer1"> <span class="other-spans">Layer 1</span> </div>
 		<div id="layer2"> <span class="other-spans">Layer 2 (Coming Soon)</span> </div>
-		<div id="map-close"> <span id="map-close-icon" class="material-icons">close</span> </div> <img src="images/map.png" id="map-image">
+		<div id="map-close" onclick="closeMap()"> <span id="map-close-icon" class="material-icons">close</span> </div> <img src="images/map.png" id="map-image">
 		<div id="map-title">Select where speed was clocked at</div>
 		<div id="map-components">
 			<!--All map components should be inside this div-->
@@ -146,12 +146,21 @@ l723 0 1 22 c2 21 -1 21 -200 21 -110 0 -370 4 -576 8 -206 5 -378 6 -381 3z" />
 					<path d="M1238 983 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" /> </g>
 			</svg>
 		</div>
+		<div id="speed-container">
+			<div id="speed-limit">Speed Limit:</div>
+			<div id="speed-limit-value">Not Set</div>
+
+			<div id="speed">Speed:</div>
+			<div id="speed-value">0 mph</div>
+
+			<div id="calculate-speed">Calculate Difference</div>
+		</div>
         <span class="material-icons" id="warning">report_problem</span>
 		<div id="warning-text">If you experience any bugs, please post them on the <a href="https://github.com/ClutchMasterFTW/Monolith-Crafting-Calculator/issues" target="_blank" class="link">GitHub issues</a> page.</div>
-		<div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" class="link">ClutchMasterFTW</a> | v.0.12</div>
+		<div id="credits">Tool Created by <a href="https://github.com/ClutchMasterFTW" target="_blank" class="link">ClutchMasterFTW</a> | v.0.13</div>
 	</div>
 	<script src="index.js"></script>
-	<!--Version 0.12-->
+	<!--Version 0.13-->
 </body>
 
 </html>
